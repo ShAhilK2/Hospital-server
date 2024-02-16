@@ -20,25 +20,16 @@ This application allows users to track the health status of their kidneys. Users
 or nodemon server.js
 
  ## Usage 
-GET /
 
-Retrieves information about the kidneys, including the total number of kidneys, the number of healthy kidneys, and the number of unhealthy kidneys.
-POST /
 
-Adds a new kidney to the user's data.
+The Kidney Health Tracker provides a set of intuitive API endpoints for seamless interaction:
 
-Request Body:
+    GET /: Retrieve comprehensive statistics about kidney health.
+    POST /: Add new kidney health data.
+    DELETE /: Remove unhealthy kidneys from the dataset.
+    PUT /: Update existing kidney health data (Currently empty in the provided code).
 
-json
 
-{
-  "isHealthy": true
-}
 
-Replace "isHealthy" with true or false depending on the health status of the kidney.
-DELETE /
 
-Deletes all unhealthy kidneys if any.
-PUT /
 
-(Note: The PUT route in the provided code is currently empty and does not have any functionality.)
